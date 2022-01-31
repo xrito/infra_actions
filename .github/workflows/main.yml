@@ -70,8 +70,7 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
-#         key: ${{ secrets.SSH_KEY }}
-#         passphrase: ${{ secrets.PASSPHRASE }} # Если ваш ssh-ключ защищён фразой-паролем
+        key: ${{ secrets.SSH_KEY }}
         script: |
           # Выполняет pull образа с DockerHub
           sudo docker pull harkort/infra_project2
